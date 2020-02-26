@@ -40,8 +40,8 @@ map.on('style.load', function() {
     type: 'fill',
     source: 'historic',
     paint: {
-  'fill-color': '#ece2f0',
-  'fill-opacity': 0.8,
+  'fill-color': '#67a9cf',
+  'fill-opacity': 0.9,
   'fill-outline-color': 'black'
 }
 });
@@ -62,33 +62,12 @@ map.on('style.load', function() {
     type: 'line',
     source: 'highlight-feature',
     paint: {
-      'line-width': 2,
-      'line-opacity': 0.9,
-      'line-color': 'white',
-    }
-  });
-
-
-  // add an empty data source, which we will use to highlight the lot the user is hovering over
-  map.addSource('highlight-feature', {
-    type: 'geojson',
-    data: {
-      type: 'FeatureCollection',
-      features: []
-    }
-  })
-
-  // add a layer for the highlighted lot
-  map.addLayer({
-    id: 'highlight-line',
-    type: 'line',
-    source: 'highlight-feature',
-    paint: {
-      'line-width': 3,
-      'line-opacity': 0.9,
+      'line-width': 1.1,
+      'line-opacity': 0.8,
       'line-color': 'black',
     }
   });
+
 
   // listen for the mouse moving over the map and react when the cursor is over our data
 
@@ -105,8 +84,10 @@ map.on('style.load', function() {
 
       var hoveredFeature = features[0]
       var featureInfo = `
-        <h4>${hoveredFeature.properties.area_name}</h4>
-        <p><strong>Description:</p>
+      <img src="${hoveredFeature.properties.image_url}"></Br></Br>
+        <h3>${hoveredFeature.properties.area_name}</h3>
+        <p class="descriptions"><strong>Description:</strong> ${hoveredFeature.properties.other_note}</p>
+        <p class="descriptions"><strong>Image Credit:</strong><i> ${hoveredFeature.properties.image_credit}</i></p>
       `
       $('#feature-info').html(featureInfo)
 
