@@ -45,7 +45,6 @@ map.on('style.load', function() {
   'fill-outline-color': 'black'
 }
 });
-});
 
 
 // add an empty data source, which we will use to highlight the lot the user is hovering over
