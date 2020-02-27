@@ -33,18 +33,18 @@ body {
 
 h1 {
   margin-top: 0;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   text-transform:capitalize;
   font-family: 'Cormorant';
   font-weight:600;
 text-shadow: 1px 2px 0px #383838, 5px 6px 0px rgba(0,0,0,0.18);
 }
 
-img {max-height:130px;}
+img {max-height:120px;}
 
 h3 {
   margin-top: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform:capitalize;
   font-family: 'Cormorant';
 text-shadow: 1px 2px 0px #383838, 5px 6px 0px rgba(0,0,0,0.18);
@@ -52,7 +52,7 @@ text-shadow: 1px 2px 0px #383838, 5px 6px 0px rgba(0,0,0,0.18);
 
 
 p
-{font-size:.9rem;
+{font-size:.8rem;
 font-family: 'Vollkorn';
 color:white;}
 
@@ -82,7 +82,7 @@ a:hover {
 #feature-info {
   background: #171717;
   padding: 15px;
-  min-height: 190px;
+  min-height: 55%;
   overflow-x:hidden;
   overflow-y:scroll;
   height:250px;
