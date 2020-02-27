@@ -9,7 +9,7 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
-  left: 30%;
+  left: 27%;
   overflow: hidden;
 }
 
@@ -18,8 +18,8 @@ body {
   left: 0;
   top: 0;
   bottom: 0;
-  overflow: hidden;
-  width: 30%;
+  overflow: auto;
+  width: 27%;
   height:100%;
   background-color: black;
   color: #FFF;
@@ -33,14 +33,14 @@ body {
 
 h1 {
   margin-top: 0;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   text-transform:capitalize;
   font-family: 'Cormorant';
   font-weight:600;
 text-shadow: 1px 2px 0px #383838, 5px 6px 0px rgba(0,0,0,0.18);
 }
 
-img {max-height:120px;}
+img {max-height:130px;}
 
 h3 {
   margin-top: 0;
@@ -61,17 +61,17 @@ font-family: 'Vollkorn';
 color:white;}
 
 a:link {
-  color: #353536;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:visited {
-  color: #5e5e61;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #333650;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -82,7 +82,7 @@ a:hover {
 #feature-info {
   background: #171717;
   padding: 15px;
-  min-height: 150px;
+  min-height: 190px;
   overflow-x:hidden;
   overflow-y:scroll;
   height:250px;
